@@ -120,6 +120,9 @@ img {
 .title-section {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: rgba(46, 47, 66, 0.7), image(people-office.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title-text {
@@ -193,6 +196,15 @@ img {
 
 .target-item {
   width: calc((100% - 72px) / 4);
+}
+
+.img-box {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: #f4f4fd;
 }
 
 .company-targets-descr {
@@ -327,4 +339,22 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.media-box {
+}
+
+.socials-title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.socails-logo {
+  width: 40px;
+  height: 40px;
 }
