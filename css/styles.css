@@ -29,8 +29,19 @@ img {
   display: block;
 }
 
+::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px; 
+}
+
 .header-class {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: : 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -56,7 +67,7 @@ img {
 }
 
 .logo {
-  color: #4d5ae5;
+  color: #4D5AE5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -65,6 +76,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+ 
 }
 
 .logo-span {
@@ -80,6 +92,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  position: relative;
+  color: #404bbf;
 }
 
 .page-nav:hover {
@@ -102,6 +116,7 @@ img {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-list {
@@ -120,9 +135,14 @@ img {
 .title-section {
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: rgba(46, 47, 66, 0.7), image(people-office.svg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1440px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .title-text {
@@ -152,6 +172,7 @@ img {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -199,12 +220,14 @@ img {
 }
 
 .img-box {
-  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   flex-shrink: 0;
   border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 .company-targets-descr {
