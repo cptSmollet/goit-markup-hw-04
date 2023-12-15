@@ -139,8 +139,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
 }
@@ -172,7 +170,7 @@ img {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -259,7 +257,7 @@ img {
 .socials-item {
 width: 40px;
 height: 40px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .logo-socials {
@@ -274,23 +272,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials :hover {
+.socials-item :hover,
+.socials-item :focus {
   background-color: #404bbf;
 }
 
-.socials :focus {
-  background-color: #404bbf;
-}
-
-
-
-.socails-logo {
-  width: 40px;
-  height: 40px;
-}
 
 
 .team-title {
@@ -362,6 +351,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .portfolio-menu-item {
   width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
 }
 
 .portfolio-menu-item :hover {
@@ -382,7 +372,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transform: translateY(0%);
+  
 }
 
 .portfolio-img {
@@ -397,6 +387,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  background-color: #4d5ae5;
   padding: 40px 32px;
   height: 100%;
   width: 100%;
