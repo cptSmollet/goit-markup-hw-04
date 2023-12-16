@@ -445,7 +445,7 @@ img {
 .flogo-container {
   display: flex;
   align-items: baseline;
-  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .footer-socials {
