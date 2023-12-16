@@ -443,9 +443,12 @@ img {
 }
 
 .flogo-container {
+  margin-right: 120px;
+}
+
+.footer-div {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 
 .footer-socials {
